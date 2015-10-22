@@ -18,7 +18,7 @@ chrome.tabs.getSelected(null, function(tab) {
       document.write("\t");     
       document.write(cookie.secure.toString().toUpperCase());
       document.write("\t");     
-      document.write(cookie.expirationDate ? cookie.expirationDate : "0");
+      document.write(Math.round(cookie.expirationDate));
       document.write("\t");     
       document.write(cookie.name);
       document.write("\t");     
